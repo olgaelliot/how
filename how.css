@@ -38,7 +38,7 @@ a {
 #three:hover {
   color: purple;
 }
-
+/*
 .img-slideshow-container {
   max-height: 80%;
   position: relative;
@@ -53,7 +53,7 @@ a {
   height: 100px;
   z-index: 999;
 }
-
+*/
 span:hover.editions {
   cursor: pointer;
 }
