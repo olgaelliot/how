@@ -1,0 +1,93 @@
+<html>
+<head>
+  <title>support HTSU</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="stylesheet" href="how.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+    integrity="sha512-YHuwZabI2zi0k7c9vtg8dK/63QB0hLvD4thw44dFo/TfBFVVQOqEG9WpviaEpbyvgOIYLXF1n7xDUfU3GDs0sw=="
+    crossorigin="anonymous"/>
+</head>
+<body>
+  <div class="col-xs-12 col-sm-6 left-container">
+    <a id="support"
+      href="https://www.paypal.com/donate?token=UD5kcas0JyOCb6WTEYb8Y1OWeJFswJbpKRa3M3OpIsuq9oLmznaxXEq8TKftwLv5aUwXUGZGtFBBoSlu">
+      support</a><a id="HTSU" href="https://showup.how"> how to show up</a>
+  </div>
+  <div class="col-xs-12 col-sm-6 right-container">
+    <span id="one" class='editions edition-button'>edition I</span>
+    <span id="two" class='editions edition-button'> edition II</span>
+    <span id="three" class='editions edition-button'> edition III</span>
+  </div>
+  <div class="img-slideshow-container">
+    <div class="mySlides fade edition-one active">
+      <img class="slideshowImg" id="myimage" src="sweater_1.jpg">
+      <img class="slideshowImg" src="sweater_1.jpg">
+      <img class="slideshowImg" src="sweater_2.jpg">
+      <img class="slideshowImg" src="sweater_3.jpg">
+    <span class="description">edition I <br>
+      HTSU? jumpers. Individualized, special, available.<br>
+      Sizes may run slightly smaller than your usual size, when ordering go a size up.<br>
+      100% cotton, hand dyed and individually made.</span>
+    </div>
+    <div class="mySlides fade edition-two">
+      <img class="slideshowImg" src="sweater_2.jpg">
+      <img class="slideshowImg" src="sweater_3.jpg">
+      <img class="slideshowImg" src="sweater_1.jpg">
+      <span class="description">edition II <br>
+        HTSU? jumpers. Individualized, special, available.<br>
+        Sizes may run slightly smaller than your usual size, when ordering go a size up.<br>
+        100% cotton, hand dyed and individually made.</span>
+    </div>
+    <div class="mySlides fade edition-three">
+      <img class="slideshowImg" src="sweater_3.jpg">
+      <img class="slideshowImg" src="sweater_2.jpg">
+      <img class="slideshowImg" src="sweater_1.jpg">
+      <span class="description">edition III <br>
+      HTSU? jumpers. Individualized, special, available.<br>
+      Sizes may run slightly smaller than your usual size, when ordering go a size up.<br>
+      100% cotton, hand dyed and individually made.</span>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)"><</a>
+    <a class="next" onclick="plusSlides(1)">></a>
+  </div>
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id" value="286NZGT2JVCC6">
+    <table id="options">
+      <tr>
+        <td><input type="hidden" name="on0" value="sizes"></td>
+      </tr>
+      <tr>
+        <td><select name="os0">
+            <option selected disabled>sizes</option>
+            <option value="small">small €30,00 EUR</option>
+            <option value="medium">medium €30,00 EUR</option>
+            <option value="large">large €30,00 EUR</option>
+            <option value="extra-large">extra-large €30,00 EUR</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="hidden" name="on1" value="editions"></td>
+      </tr>
+      <tr>
+        <td><select name="os1">
+            <option selected disabled>editions</option>
+            <option value="I">I </option>
+            <option value="II">II </option>
+            <option value="III">III </option>
+          </select> </td>
+      </tr>
+    </table>
+    <input type="hidden" name="currency_code" value="EUR">
+    <input type="submit" class="buy-button" name="submit" value="buy">
+  </form>
+  <div class="info"><br><br><br>SHIPPING<br> Netherlands & Belgium €4<br> Austria, Belgium, Denmark, Germany, France, Italy, Luxembourg, Spain, Sweden, United Kingdom (EUR1) €9,35<br>All other countries in Europe excl. Russia (EUR2) €11,97<br>All other countries incl. Russia (INTL) €15
+  </div>
+  <img id="flower" src="flower.png">
+  <script src="how.js"></script>
+</body>
+
+</html>

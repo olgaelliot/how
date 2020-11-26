@@ -1,0 +1,66 @@
+* {
+  box-sizing:border-box;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+img {
+  width: 20%;
+  filter: blur(20px) infinite; /* W3C */
+  -webkit-filter: blur(20px) infinite;
+  -webkit-animation: image_blur 20s infinite;
+  border-radius: 5%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+ img {
+   width: 40%;
+ }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.left-container {
+  left: 0;
+}
+
+#support:hover {
+  color: lightgreen;
+}
+
+#HTSU:hover {
+  color: blue;
+}
+
+.right-container {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+#one:hover {
+  color: orange;
+}
+
+#two:hover {
+  color: red;
+}
+
+#three:hover {
+  color: purple;
+}
+
+ @-webkit-keyframes image_blur {
+  0% {
+    -webkit-filter: blur(20px);
+  }
+  50% {
+    -webkit-filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(20px);
+  }
+}

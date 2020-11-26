@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.left-container {
+  left: 0;
+}
+
+.right-container {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+#support:hover {
+  color: lightgreen;
+}
+
+#HTSU:hover {
+  color: blue;
+}
+
+#one:hover {
+  color: orange;
+}
+
+#two:hover {
+  color: red;
+}
+
+#three:hover {
+  color: purple;
+}
+
+.img-slideshow-container {
+  max-height: 80%;
+  position: relative;
+  padding: 0;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border-radius: 50%;
+  cursor: none;
+  width: 100px;
+  height: 100px;
+  z-index: 999;
+}
+
+span:hover.editions {
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  flex-direction: row;
+  height: 80vh;
+  overflow-x: scroll;
+}
+
+.mySlides img {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  left: 28%;
+}
+
+.mySlides.active {
+  display: flex;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .slideshow-container {
+    max-width: 85%;
+    left: 8%;
+  }
+  .mySlides {
+    height: 50vh;
+  }
+
+  .mySlides img {
+    padding: 10px;
+    left: 7%;
+    height: 100%;
+  }
+
+  #flower {
+    width: 80%;
+    left: 10%;
+  }
+}
+
+.prev,
+.next {
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  user-select: none;
+  z-index: 1000;
+  font-weight: 100;
+}
+
+.next {
+  right: 7%;
+}
+
+.prev {
+  left: 7%;
+}
+
+.description {
+  top: 100%;
+  left: 30%;
+  position: absolute;
+  z-index: 0;
+}
+
+.info {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+form {
+  text-align: center;
+  margin-top: 10%;
+}
+
+select {
+  margin-left: 320%;
+  min-width: 170px;
+  padding: .3125rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid black;
+  border-radius: 0;
+  background-color: #fff;
+  font-family: inherit;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.…nts='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
+  background-origin: content-box;
+  background-position: right -.625rem center;
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  padding-right: .9375rem;
+  -webkit-transition: box-shadow .5s,border-color .25s ease-in-out;
+  transition: box-shadow .5s,border-color .25s ease-in-out;
+}
+
+select:focus {
+  outline:none;
+}
+
+select::-moz-focus-inner {
+  border:0;
+}
+
+.buy-button {
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  min-width: 70px;
+  background-color: black;
+  color: white;
+}
+
+#flower {
+  width: 20%;
+  left: 40%;
+  position: absolute;
+}
